@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fahrenheit"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/f_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Celcius"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/c_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/ctc_btn"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Convert to celcius"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:backgroundTint="@android:color/darker_gray"
+            />
+        <Button
+            android:id="@+id/ctf_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert to fahrenheit"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:backgroundTint="@android:color/darker_gray"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/clear_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:backgroundTint="@android:color/darker_gray"
+        />
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="Các kiểu lập trình sự kiện"
+        android:textColor="@color/white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingRight="10dp"
+            android:text="Số a:" />
+
+        <EditText
+            android:id="@+id/tv_soa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingRight="10dp"
+            android:text="Số b:" />
+
+        <EditText
+            android:id="@+id/tv_sob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/plus_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:text="Tổng 2 số" />
+
+    <Button
+        android:id="@+id/sub_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:text="Trừ 2 số" />
+
+    <Button
+        android:id="@+id/mul_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:text="Tích 2 số" />
+
+    <Button
+        android:id="@+id/div_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:text="Thương 2 số" />
+
+    <Button
+        android:id="@+id/gcd_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:text="UCLN 2 số" />
+
+    <Button
+        android:id="@+id/exit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:text="Thoát"
+        android:textColor="@android:color/holo_red_light" />
+</LinearLayout>
