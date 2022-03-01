@@ -17,7 +17,7 @@ import android.widget.Toast;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
-    DurationPicker durationPicker;
+    TimePickerDialog durationPicker;
     CountDownTimer countDownTimer;
     int luot = 1;
     int diemBot = 0;
@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
     TextView result;
     ConstraintLayout view_game;
     TextView duration;
+    boolean isStart = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,15 +80,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 getDurationPicker();
-
-
-
+                isStart = false;
+                btn.setText("Bắt đầu");
                 btn.setVisibility(Button.VISIBLE);
                 view_game.setVisibility(view_game.VISIBLE);
                 playBtn.setVisibility(playBtn.INVISIBLE);
                 tiSoBot.setText(String.valueOf(diemBot));
                 tiSoPlayer.setText(String.valueOf(diemPlayer));
                 thongBao.setText("");
+
+
+
+
             }
         });
 
@@ -95,8 +99,22 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startCountDown();
 
+                isStart = !isStart;
+                if(isStart){
+                    startCountDown();
+                    btn.setText("Dừng");
+                }else{
+                    btn.setVisibility(btn.INVISIBLE);
+                    playBtn.setVisibility(playBtn.VISIBLE);
+                    luot = 0;
+                    diemBot = 0;
+                    diemPlayer =0;
+                    String time = "00:00";
+                    duration.setText(time);
+                    countDownTimer.cancel();
+                    btn.setText("Bắt đầu");
+                }
             }
         });
 
@@ -195,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
                 duration.setText(getTimeString(minute, second));
             }
         };
-        durationPicker = new DurationPicker(MainActivity.this, timeSetListener, lastMinute, lastSecond);
+        durationPicker = new TimePickerDialog(MainActivity.this, timeSetListener, lastMinute, lastSecond, true);
         durationPicker.show();
 
     }
