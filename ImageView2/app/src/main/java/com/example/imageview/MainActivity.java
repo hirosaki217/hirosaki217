@@ -125,9 +125,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 if(diemBot > diemPlayer){
-                    thongBao.setText("Máy Thắng");
+                    thongBao.setText("Đỏ thắng");
                 }else if(diemBot < diemPlayer){
-                    thongBao.setText("Bạn Thắng");
+                    thongBao.setText("Xanh Thắng");
                 }else{
                     thongBao.setText("Hòa");
                 }

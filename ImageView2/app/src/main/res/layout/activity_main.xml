@@ -19,34 +19,39 @@
             android:layout_width="80dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/b1fv"
+            android:layout_margin="5dp"
             />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:layout_margin="5dp"
             app:srcCompat="@drawable/b1fv" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="80dp"
+            android:layout_margin="5dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/b1fv" />
 
     </LinearLayout>
+
     <TextView
         android:id="@+id/ketqua"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#F44336"
         android:gravity="center"
-        android:text="kết quả"
-        android:background="#fff002"
-        />
+        android:text="Đỏ"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/view_game"
         android:layout_width="match_parent"
-        android:layout_height="261dp"
+        android:layout_height="229dp"
         android:minHeight="250dp"
         android:visibility="visible">
 
@@ -156,10 +161,11 @@
         android:id="@+id/ketqua2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#4CAF50"
         android:gravity="center"
-        android:text=""
-        android:background="#fff002"
-        />
+        android:text="Xanh"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -172,18 +178,22 @@
             android:layout_width="80dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/b1fv"
+            android:layout_margin="5dp"
             />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:layout_margin="5dp"
             app:srcCompat="@drawable/b1fv" />
 
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="80dp"
             android:layout_height="100dp"
+            android:layout_margin="5dp"
+
             app:srcCompat="@drawable/b1fv" />
 
     </LinearLayout>
@@ -194,7 +204,7 @@
         android:backgroundTint="#4CAF50"
         android:inputType="text"
         android:visibility="invisible"
-        android:text="Rút" />
+        android:text="Bắt đầu" />
     <Button
         android:id="@+id/play"
         android:layout_width="match_parent"
