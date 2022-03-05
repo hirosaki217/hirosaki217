@@ -65,22 +65,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 luotChoi.setText(luot+"/10");
-                if(luot == 10 ){
-                    if(diemBot > diemPlayer){
-                        thongBao.setText("Máy Thắng");
-                    }else if(diemBot < diemPlayer){
-                        thongBao.setText("Bạn Thắng");
-                    }else{
-                        thongBao.setText("Hòa");
-                    }
-                    btn.setVisibility(btn.INVISIBLE);
-                    playBtn.setVisibility(playBtn.VISIBLE);
-                    luot = 0;
-                    diemBot = 0;
-                    diemPlayer =0;
 
-                    return;
-                }
                 int[] temp = layNgauNhien(0, 51, 6);
                 baso1 = setArray(0, 3, temp);
                 baso2 = setArray(3, 6, temp);
@@ -115,6 +100,22 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 luot++;
+                if(luot-1 == 10 ){
+                    if(diemBot > diemPlayer){
+                        thongBao.setText("Máy Thắng");
+                    }else if(diemBot < diemPlayer){
+                        thongBao.setText("Bạn Thắng");
+                    }else{
+                        thongBao.setText("Hòa");
+                    }
+                    btn.setVisibility(btn.INVISIBLE);
+                    playBtn.setVisibility(playBtn.VISIBLE);
+                    luot = 0;
+                    diemBot = 0;
+                    diemPlayer =0;
+
+                    return;
+                }
 
 //                if(luot > 10){
 //                    luot = 0;
