@@ -2,6 +2,7 @@ package com.example.uidemo;
 
 import android.app.Activity;
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.io.File;
 import java.util.List;
 
 public class InformationEmployeeList extends ArrayAdapter    {
@@ -38,7 +40,7 @@ public class InformationEmployeeList extends ArrayAdapter    {
         textViewName.setText("Tên: "+employeeList.get(position).getHoTen());
         textViewGender.setText("Giới tính: "+employeeList.get(position).getGioiTinh());
         textViewUnit.setText("Đơn vị: "+employeeList.get(position).getDonVi());
-        imageFlag.setImageURI(employeeList.get(position).getImageId());
+        imageFlag.setImageURI(Uri.parse(employeeList.get(position).getImageId()));
         return row;
     }
 }

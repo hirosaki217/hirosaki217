@@ -6,10 +6,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -22,6 +27,19 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.lang.reflect.Type;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -88,8 +106,9 @@ public class MainActivity extends AppCompatActivity {
                 String hoten = hoTen.getText().toString();
                 String gioitinh = ((RadioButton) findViewById(rg.getCheckedRadioButtonId())).getText().toString();
                 Uri image = uri;
-                Employee nv = new Employee(ma, hoten, gioitinh, donVi, image);
-                employeeList.add(nv);
+                Employee nv = new Employee(ma, hoten, gioitinh, donVi, image.toString());
+                if(!employeeList.contains(nv))
+                    employeeList.add(nv);
 //                ArrayList<String> listNv = new ArrayList<String>();
 //                for (Employee nv1 : employeeList){
 //                    listNv.add(nv1.toString());
@@ -126,6 +145,9 @@ public class MainActivity extends AppCompatActivity {
                         spinnerDonVi.setSelection(j);
                     }
                 }
+
+                imageViewAnh.setImageURI(Uri.parse(nv.getImageId()));
+
             }
         });
 
@@ -177,8 +199,66 @@ public class MainActivity extends AppCompatActivity {
         if(resultCode == RESULT_OK && requestCode == IMAGE_PICK_CODE){
 
             uri = data.getData();
+
 //            Toast.makeText(MainActivity.this, uri.toString(), Toast.LENGTH_SHORT).show();
             imageViewAnh.setImageURI(uri);
         }
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.mDocDuLieu:{
+
+
+                SharedPreferences sharedPreferences = getSharedPreferences("shared employee", MODE_PRIVATE);
+                Gson gson = new Gson();
+                String json = sharedPreferences.getString("listEmployees", null);
+                if(json!= null){
+                    Type type = new TypeToken<ArrayList<Employee>>(){}.getType();
+                    employeeList = gson.fromJson(json, type);
+                }
+                if(employeeList== null )
+                    employeeList = new ArrayList<>();
+                System.out.println(employeeList.size());
+                InformationEmployeeList adapterListNV = new InformationEmployeeList(MainActivity.this, employeeList);
+                listView.setAdapter(adapterListNV);
+                break;
+            }
+            case R.id.mLuuDuLieu:{
+//                if(checkStatus() == 1){
+                    SharedPreferences sharedPreferences = getSharedPreferences("shared employee", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    Gson gson = new Gson();
+                    String json = gson.toJson(employeeList);
+                    editor.putString("listEmployees", json);
+                    editor.apply();
+
+//                }
+
+                break;
+            }
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+//    public int checkStatus(){
+//        String state = Environment.getExternalStorageState();
+//        if(state.equals(Environment.MEDIA_MOUNTED)){
+//            return 1;
+//        }
+//        if(state.equals(Environment.MEDIA_MOUNTED_READ_ONLY)){
+//            return 0;
+//        }
+//        return -1;
+//    }
 }

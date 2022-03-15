@@ -2,12 +2,16 @@ package com.example.uidemo;
 
 import android.net.Uri;
 
-public class Employee {
+import java.io.Serializable;
+import java.net.URI;
+import java.util.Objects;
+
+public class Employee implements Serializable {
     private int maSo;
     private String hoTen;
     private String gioiTinh;
     private String donVi;
-    private Uri imageId;
+    private String imageId;
 
     public int getMaSo() {
         return maSo;
@@ -41,11 +45,11 @@ public class Employee {
         this.donVi = donVi;
     }
 
-    public Uri getImageId() {
+    public String getImageId() {
         return imageId;
     }
 
-    public void setImageId(Uri imageId) {
+    public void setImageId(String imageId) {
         this.imageId = imageId;
     }
 
@@ -58,12 +62,13 @@ public class Employee {
      * @param imageId
      */
 
-    public Employee(int maSo, String hoTen, String gioiTinh, String donVi, Uri imageId) {
+    public Employee(int maSo, String hoTen, String gioiTinh, String donVi, String imageId) {
         this.maSo = maSo;
         this.hoTen = hoTen;
         this.gioiTinh = gioiTinh;
         this.donVi = donVi;
         this.imageId = imageId;
+
     }
 
     /**
@@ -81,6 +86,19 @@ public class Employee {
     }
 
     public Employee() {
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Employee)) return false;
+        Employee employee = (Employee) o;
+        return getMaSo() == employee.getMaSo();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getMaSo());
     }
 
     @Override
