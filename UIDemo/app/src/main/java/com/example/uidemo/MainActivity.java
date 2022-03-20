@@ -30,14 +30,17 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.lang.reflect.Type;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -106,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
                 String hoten = hoTen.getText().toString();
                 String gioitinh = ((RadioButton) findViewById(rg.getCheckedRadioButtonId())).getText().toString();
                 Uri image = uri;
+
                 Employee nv = new Employee(ma, hoten, gioitinh, donVi, image.toString());
                 if(!employeeList.contains(nv))
                     employeeList.add(nv);
@@ -217,11 +221,33 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.mDocDuLieu:{
-
-
-                SharedPreferences sharedPreferences = getSharedPreferences("shared employee", MODE_PRIVATE);
                 Gson gson = new Gson();
-                String json = sharedPreferences.getString("listEmployees", null);
+                String fileName = "employees.txt";
+                File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS);
+                File myFile = new File(folder, fileName);
+                FileInputStream fstream;
+                StringBuilder sbuffer = new StringBuilder();
+                try {
+                    fstream = new FileInputStream(myFile);
+                    if(fstream != null){
+                        InputStreamReader isr = new InputStreamReader(fstream);
+                        BufferedReader buff = new BufferedReader(isr);
+                        String line  = "";
+                        while ((line = buff.readLine())!= null){
+                            sbuffer.append(line);
+                        }
+                    }
+
+                    fstream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+
+//                SharedPreferences sharedPreferences = getSharedPreferences("shared employee", MODE_PRIVATE);
+
+//                String json = sharedPreferences.getString("listEmployees", null);
+                String json = sbuffer.toString();
                 if(json!= null){
                     Type type = new TypeToken<ArrayList<Employee>>(){}.getType();
                     employeeList = gson.fromJson(json, type);
@@ -234,15 +260,30 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
             case R.id.mLuuDuLieu:{
-//                if(checkStatus() == 1){
-                    SharedPreferences sharedPreferences = getSharedPreferences("shared employee", MODE_PRIVATE);
-                    SharedPreferences.Editor editor = sharedPreferences.edit();
+
+//                    SharedPreferences sharedPreferences = getSharedPreferences("shared employee", MODE_PRIVATE);
+//                    SharedPreferences.Editor editor = sharedPreferences.edit();
                     Gson gson = new Gson();
                     String json = gson.toJson(employeeList);
-                    editor.putString("listEmployees", json);
-                    editor.apply();
+//                    editor.putString("listEmployees", json);
+//                    editor.apply();
 
-//                }
+                    String fileName = "employees.txt";
+                    File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS);
+                    if(!folder.exists()){
+                        folder.mkdir();
+                    }
+                    File myFile = new File(folder, fileName);
+                    FileOutputStream fstream ;
+                try {
+                    fstream = new FileOutputStream(myFile);
+                    fstream.write(json.getBytes());
+                    fstream.close();
+                    Toast.makeText(this, "da luu", Toast.LENGTH_SHORT).show();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
 
                 break;
             }
