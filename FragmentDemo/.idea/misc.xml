@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Java Android/FragmentDemo/app/src/main/res/drawable/background_main.xml" value="0.279" />
+        <entry key="..\:/Java Android/FragmentDemo/app/src/main/res/drawable/item_background.xml" value="0.1285" />
         <entry key="..\:/Java Android/FragmentDemo/app/src/main/res/layout-land/activity_main.xml" value="0.1" />
         <entry key="..\:/Java Android/FragmentDemo/app/src/main/res/layout/activity_info.xml" value="0.27575887131252674" />
         <entry key="..\:/Java Android/FragmentDemo/app/src/main/res/layout/activity_main.xml" value="0.16015625" />
-        <entry key="..\:/Java Android/FragmentDemo/app/src/main/res/layout/fragment_info.xml" value="0.1" />
-        <entry key="..\:/Java Android/FragmentDemo/app/src/main/res/layout/fragment_list.xml" value="0.1" />
+        <entry key="..\:/Java Android/FragmentDemo/app/src/main/res/layout/fragment_info.xml" value="0.40039840637450197" />
+        <entry key="..\:/Java Android/FragmentDemo/app/src/main/res/layout/fragment_list.xml" value="0.25" />
         <entry key="..\:/Java Android/FragmentDemo/app/src/main/res/layout/row_item.xml" value="0.2688123300090662" />
       </map>
     </option>

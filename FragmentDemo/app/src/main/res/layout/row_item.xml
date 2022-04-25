@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:background="@drawable/item_background"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/imgSP"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_marginTop="32dp"
         android:scaleType="fitXY"
@@ -18,22 +19,22 @@
     <TextView
         android:id="@+id/tvCTSP"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
         android:fontFamily="sans-serif-medium"
-        android:paddingLeft="20dp"
         android:text="chi tiết sản phẩm"
         android:textColor="#000000"
-        android:textSize="16sp" />
+        android:gravity="center"
+        android:textSize="14dp" />
 
     <TextView
-        android:paddingLeft="20dp"
         android:id="@+id/tvGiaSP"
-        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="5dp"
         android:fontFamily="sans-serif-medium"
         android:text="100.000đ"
         android:textColor="#F44336"
-        android:textSize="16sp"/>
+        android:textSize="14dp"/>
 </LinearLayout>

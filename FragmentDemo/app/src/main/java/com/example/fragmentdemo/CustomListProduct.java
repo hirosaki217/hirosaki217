@@ -50,7 +50,7 @@ public class CustomListProduct extends BaseAdapter {
         TextView tvGiaSP = view.findViewById(R.id.tvGiaSP);
 
         imageView.setImageResource(list.get(i).getImage());
-        tvCTSP.setText(list.get(i).getDetail());
+        tvCTSP.setText(list.get(i).getName());
         tvGiaSP.setText(list.get(i).getPrice());
         return view;
     }

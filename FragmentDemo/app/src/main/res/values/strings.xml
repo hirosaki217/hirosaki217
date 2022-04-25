@@ -1,14 +1,124 @@
 <resources>
     <string name="app_name">FragmentDemo</string>
-    <string name="default_detail">Em vừa về mấy thùng BÔNG TẨY TRANG DẠNG NÉN CALLA xài siêu êm, siêu thích đây cả nhà ơi.
-💢 Túi to 500gr siêu tiết kiệm, xài rất lâu mới hết.
-💢 Mua 1 túi 500gr giá chỉ #159k TẶNG #1set 2 khẩu trang VNN95 An Mask Pro.
-💢 Thành phần 100% bông xơ tự nhiên, an toàn và dịu nhẹ cho làn da của chị em.
+    <string name="sua_hello">Em vừa về mấy thùng BÔNG TẨY TRANG DẠNG NÉN CALLA xài siêu êm, siêu thích đây cả nhà ơi.
+ \n 💢 Túi to 500gr siêu tiết kiệm, xài rất lâu mới hết. \n
+💢 Mua 1 túi 500gr giá chỉ #159k TẶNG #1set 2 khẩu trang VNN95 An Mask Pro. \n
+💢 Thành phần 100% bông xơ tự nhiên, an toàn và dịu nhẹ cho làn da của chị em. \n
 
-❓❓❓ Vì sao cần tẩy trang dù trước đó không trang điểm?
-👉 Nhiều bạn nghĩ rằng chỉ khi trang điểm mới cần phải tẩy trang, không nhất thiết phải tẩy hằng ngày. Điều đó hoàn toàn sai lầm vì tẩy trang là một bước vô cùng quan trọng trong một chu trình chăm sóc da.
-👉 Tẩy trang giúp làm sạch bụi bẩn từ sâu bên trong lỗ chân lông.
-👉 Nước tẩy trang giúp hấp thu các dưỡng chất trong kem dưỡng hiệu quả hơn.
-👉 Nước tẩy trang giúp tẩy đi lớp tế bào chết trên da, làm cho da láng mịn và ngăn ngừa mụn.
+❓❓❓ Vì sao cần tẩy trang dù trước đó không trang điểm?\n
+👉 Nhiều bạn nghĩ rằng chỉ khi trang điểm mới cần phải tẩy trang, không nhất thiết phải tẩy hằng ngày. Điều đó hoàn toàn sai lầm vì tẩy trang là một bước vô cùng quan trọng trong một chu trình chăm sóc da.\n
+👉 Tẩy trang giúp làm sạch bụi bẩn từ sâu bên trong lỗ chân lông.\n
+👉 Nước tẩy trang giúp hấp thu các dưỡng chất trong kem dưỡng hiệu quả hơn.\n
+👉 Nước tẩy trang giúp tẩy đi lớp tế bào chết trên da, làm cho da láng mịn và ngăn ngừa mụn.\n
 👉 Để hoàn thành bước tẩy trang hoàn hảo, bạn không thể bỏ qua loại bông tẩy trang </string>
+
+    <string name="sua_tuoi_tiet_trung_Dutch_Lady_Organic"> "Loại sữa Sữa tươi tiệt trùng organic không đường\n
+Dung tích 1 lít\n
+Phù hợp với Trẻ từ 1 tuổi trở lên\n
+Thành phần Sữa tươi 100%\n
+Cách mở nắp Mở nắp nhựa rồi giật khoen để xé lớp giấy bạc bên trong\n
+Thương hiệu Dutch Lady (Hà Lan)\n
+Sản xuất tại Hà Lan\n
+Sữa tươi tiệt trùng Organic Dutch Lady là nguồn sữa sạch, thuần khiết, nhập khẩu từ Hà Lan, được sản xuất theo quy trình nghiêm ngặt đạt tiêu chuẩn Châu Âu.\n
+\n
+Nguồn sữa Dutch Lady Organic lấy từ đàn bò được chăn thả hoàn toàn trên cánh đồng tự nhiên và được nuôi dưỡng trong môi trường sạch theo tiêu chuẩn Organic.\n
+HSD: 12 tháng kể từ NSX </string>
+    <string name="sua_chua_len_men_tu_nhien_Dutch_Lady_Organic">
+\n
+        Được làm từ 100% sữa lên men tự nhiên Giúp dễ dàng tiêu hóa Đa dạng hương vị Nguyên liệu chọn lọc nghiêm ngặt, đạt tiêu chuẩn Hà Lan\n\n
+
+- Thùng Sữa Chua Uống Lên Men Tự Nhiên Dutch Lady Hương Việt Quất và Bạc Hà được làm từ 100% sữa lên men tự nhiên giúp dễ dàng tiêu hóa.\n
+- Đa dạng hương vị với hương vị tự nhiên thơm ngon và hấp dẫn.\n
+- Thành phần: Nước, sữa chua lên men tự nhiên (43%), đường, chất ổn định dùng cho thực phẩm: (1442,440,452 (i)), hương sữa chua tổng hợp, vitamin (B3, B1 và B6)/ Water, Naturally Fermented Yoghurt (43%), sugar, food stabilizers: (1442, 440, 452(i)), nature - identical yoghurt flavour, vintamins (B3, B1 and B6).- Cách sử dụng: Lắc đều trước khi uống. Ngon hơn khi uống lạnh. Nên dùng 1-2 hộp 180ml mỗi ngày. Sản phẩm sử dụng cho 1 lần uống\n
+- Cách bảo quản: bảo quản nơi khô ráo và thoáng mát.\n
+\n
+Giá sản phẩm trên Shopee đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh.\n
+        \n
+- Hạn sử dụng: 6 tháng kể từ ngày sản xuất\n
+        \n
+- Xuất xứ: Việt Nam\n
+    </string>
+    <string name="sua_chua_yomost_vi_cam">
+
+        Vị ngon hứng khởi từ sữa chua lên men tự nhiên và nước trái cây thiên nhiên của YoMost giúp bạn luôn khỏe mạnh từ bên trong và tràn đầy sức sống để luôn sống hết mình mỗi ngày.\n
+Được làm từ cam thuần khiết Bổ sung năng lượng mỗi ngày Vị cam ngọt dịu, hấp dẫn Lên men tự nhiên Cung cấp protein, canxi, vitamin\n
+Thùng 12 Hộp Sữa Chua Lên Men Tự Nhiên Yomost Vị Cam được làm từ sữa chua lên men tự nhiên kết hợp cùng hương vị cam tươi tự nhiên thơm ngon, giúp cung cấp nhiều loại dưỡng chất cần thiết cho cơ thể như protein, canxi và vitamin cho cơ thể.\n
+Uống YoMost mỗi ngày giúp cơ thể khỏe mạnh ngay từ bên trong, giúp vẻ ngoài của bạn luôn tươi tắn, tràn đầy sức sống.\n
+Sản phẩm là sự hòa quyện của hương sữa chua và vị nước trái cây thật, tạo nên vị chua ngọt đặc trưng, hấp dẫn.\n
+Sữa chua được sản xuất trên dây chuyền công nghệ cao, đảm bảo đáp ứng các tiêu chuẩn chất lượng và an toàn cho sức khỏe của người sử dụng.\n
+Hiện tượng lắng đọng tự nhiên không ảnh hưởng tới chất lượng sản phẩm.\n
+Hướng dẫn sử dụng: Nên dùng 3 ly một ngày (1 ly khoảng 170ml). Sản phẩm dành cho đối tượng trên 2 tuổi.\n
+Hướng dẫn bảo quản: Bảo quản nơi khô ráo, thoáng mát. Sau khi mở hộp, đậy kín và bảo quản lạnh ở 2-7 °C và sử dụng hết trong vòng 3 ngày.\n
+- Hạn sử dụng: 8 tháng kể từ ngày sản xuất\n
+- Xuất xứ: Việt Nam\n
+    </string>
+    <string name="sua_chua_lenmen_tu_nhien_viet_quat">
+
+        Được làm từ 100% sữa lên men tự nhiên Giúp dễ dàng tiêu hóa Đa dạng hương vị Nguyên liệu chọn lọc nghiêm ngặt, đạt tiêu chuẩn Hà Lan\n
+\n\n
+- Thùng Sữa Chua Uống Lên Men Tự Nhiên Dutch Lady Vị Tự Nhiên được làm từ 100% sữa lên men tự nhiên giúp dễ dàng tiêu hóa.\n
+- Đa dạng hương vị với hương vị tự nhiên thơm ngon và hấp dẫn.\n
+- Thành phần: Nước, sữa chua lên men tự nhiên (43%), đường, chất ổn định dùng cho thực phẩm: (1442,440,452 (i)), hương sữa chua tổng hợp, vitamin (B3, B1 và B6)/ Water, Naturally Fermented Yoghurt (43%), sugar, food stabilizers: (1442, 440, 452(i)), nature - identical yoghurt flavour, vintamins (B3, B1 and B6).\n
+- Cách sử dụng: Lắc đều trước khi uống. Ngon hơn khi uống lạnh. Nên dùng 1-2 hộp 180ml mỗi ngày. Sản phẩm sử dụng cho 1 lần uống\n
+- Cách bảo quản: bảo quản nơi khô ráo và thoáng mát.\n
+\n
+Giá sản phẩm trên Shopee đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh.\n
+- Hạn sử dụng: 6 tháng kể từ ngày sản xuất\n
+- Xuất xứ: Việt Nam\n
+    </string>
+    <string name="Nutriboost_huong_dau">
+
+        Thương hiệu Nutriboost (Việt Nam)\n
+Hương vị Hương dâu\n
+Phù hợp Dùng cho trẻ trên 3 tuổi và người lớn\n
+Thành phần Nước, sữa, nước ép táo, hương dâu tổng hợp,...\n
+Dung tích 297ml\n
+Sản xuất tại Việt Nam. HSD: 6 tháng kể từ NSX\n
+    </string>
+    <string name="Creamer_sua_dac_co_duong_huong_dau">
+        Creamer đặc Sữa Pha Chế có đường Nutimilk đáp ứng nhu cầu đa dạng của tất cả mọi người, là công thức tuyệt hảo không thể thiếu trong nhiều món ngon hằng ngày:
+\n\n
+- Bí quyết để pha ly cà phê sữa đậm đà sành điệu.- Thành phần không để thiếu cho những chiếc bánh flan sánh mịn, béo ngậy.- Thêm sữa đặc Nuti cho ly sinh tố thêm thơm ngon, bổ dưỡng.- Nguyên liệu không thể thiếu cho ly trà sữa hấp dẫn, ly kem tươi hay hũ rau câu mát\n
+lạnh ngày hè.\n
+Sữa đặc Nuti còn là nguyên liệu đặc trưng để cho ra đời những viên kẹo sữa ngọt ngào,\n
+hay những chiếc bánh ngọt ngon tuyệt mang phong cách Á-Âu như pudding, bánh\n
+tart, bánh su kem.Được sản xuất trên dây chuyền hiện đại của Malaysia dưới sự giám sát chất lượng của các chuyên gia NutiFood.\n
+*Hướng dẫn sử dụng:- Dùng trực tiếp hoặc để pha chế các món ăn thức uống khác.- Bảo quản nơi khô ráo, thoáng mát. Sau khi mở hộp nên bảo quản trong tủ lạnh và sử dụng hết trong 3 ngày.*Quy cách sản phẩm: 385 gr/Hộp x 24 Hộp/Thùng.\n
+    </string>
+    <string name="sua_yen_mach_dau_do">
+
+        Thức uống yến mạch đậu đỏ Việt Ngũ Cốc - Giàu chất xơ và chất chống Oxi hoá - thay thế bữa ăn nhẹ
+Hướng dẫn sử dụng: Thích hợp cho trẻ từ 3 tuổi trở lên và người lớn. Sản phẩm cho 1 lần sử dụng. Ngon hơn khi uống lạnh. Nên dùng từ 2-3 hộp mỗi ngày.
+Dung tích: 180ml.
+Quy cách: 4 hộp/lốc ; 10 lốc/thùng.
+Hạn sử dụng: 6 tháng kể từ ngày sản xuất.
+    </string>
+    <string name="sua_dac_ngoi_sao_phuong_nam">
+        Mô tả sản phẩm
+Tên sản phẩm: Thực phẩm bổ sung Creamer đặc Ngôi Sao Phương Nam xanh lá - Hộp giấy
+Ngôi Sao Phương Nam là “Thương hiệu được chọn mua nhiều nhất” (*), được người tiêu dùng tin tưởng và sử dụng phổ biến trong các công thức chế biến như bánh flan, sinh tố, yogurt…
+Đặc biệt, Ngôi Sao Phương Nam là bí quyết không thể thiếu để pha ly cà phê sữa thơm ngon, đúng điệu nhờ vào độ sánh đặc, thơm béo.
+Sản phẩm được sử dụng phù hợp cho cả gia đình.
+(*) Trong Ngành hàng Sữa đặc có đường – theo nghiên cứu của Kantar Worldpanel Brand Footprint 2015 – 4 thành phố chính Việt Nam. Giấy chứng nhận được cấp ngày 11 tháng 01 năm 2016.
+    </string>
+    <string name="sua_dinh_duong_co_duong">
+
+        Dung tích 220ml
+Phù hợp với Trẻ từ 1 tuổi trở lên
+Thành phần Sữa (93,5%) (nước, sữa bột, chất béo sữa), đường tinh luyện (3,9%), dầu thực vật, chất ổn định (471,407,412), hương liệu tổng hợp dùng cho thực phẩm, vitamin (A, D3)
+Lưu ý Bao bì có thể thay đổi theo từng lô sản xuất, nhưng không ảnh hưởng đến chất lượng của sản phẩm
+Thương hiệu Vinamilk (Việt Nam)
+Sản xuất tại Việt Nam
+
+Sữa tiệt trùng Vinamilk A D3 có đường thơm ngon, dễ uống, được bổ sung nhiều dưỡng chất thiết yếu như vitamin A, D3 và canxi, hỗ trợ phát triển thị lực và hệ xương chắc khoẻ.
+
+Sữa được sản xuất theo công nghệ tiệt trùng UTH giúp loại bỏ các loại khuẩn có hại mà vẫn giữ được các chất dinh dưỡng.
+
+Hướng dẫn sử dụng:
+Sử dụng ngay sau khi mở bao bì.
+Ngon hơn khi dùng lạnh.
+Bảo quản:
+Bảo quản nơi khô ráo, thoáng mát.
+Nên dùng hết sau khi mở, nếu không hết bảo quản ngăn mát tủ lạnh. Nên dùng hết sau 3 ngày.
+    </string>
 </resources>

@@ -19,6 +19,6 @@
         android:layout_height="wrap_content"
         android:name="com.example.fragmentdemo.FragmentInfo"
         android:layout_weight="6"
-        android:layout_marginLeft="5dp"
+        
         />
 </LinearLayout>

@@ -4,47 +4,68 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.widget.GridView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements PushData{
-    GridView gridView;
+//    GridView gridView;
+    private static Product product = null;
+    FragmentManager fragmentManager;
+    FragmentInfo  info;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        gridView = findViewById(R.id.listItem);
+
+        fragmentManager = getFragmentManager();
+
         Configuration configuration = getResources().getConfiguration();
         if(configuration.orientation == Configuration.ORIENTATION_PORTRAIT){
-            gridView.setNumColumns(4);
+            FragmentList fragmentList = (FragmentList) getFragmentManager().findFragmentById(R.id.fragmentContainerView4);
+            fragmentList.setNumColumns(4);
+        }else if(configuration.orientation == Configuration.ORIENTATION_LANDSCAPE){
+
+            if(product != null){
+                info  = (FragmentInfo) getFragmentManager().findFragmentById(R.id.fragmentContainerView3);
+                if(info != null && info.isInLayout()){
+                    info.setData(product);
+                }
+            }
         }
-
     }
 
-    @Override
-    public void onConfigurationChanged(@NonNull Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-//
-//        if(newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
-//            gridView.setNumColumns(4);
-//        }else if(newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE){
-//            gridView.setNumColumns(1);
-//        }
-    }
+
 
     @Override
     public void DataProduct(Product product) {
-        FragmentInfo  info = (FragmentInfo) getFragmentManager().findFragmentById(R.id.fragmentContainerView3);
+        this.product = product;
+        info = (FragmentInfo) getFragmentManager().findFragmentById(R.id.fragmentContainerView3);
         if(info != null && info.isInLayout()){
             info.setData(product);
         }else{
-            Intent intent = new Intent(MainActivity.this, ActivityInfo.class);
-            intent.putExtra("product", product);
-            startActivity(intent);
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("p", product);
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            FragmentInfo fragmentInfo = new FragmentInfo();
+            fragmentInfo.setArguments(bundle);
+            transaction.add(R.id.frLayout,fragmentInfo , "frInfor");
+            transaction.addToBackStack("frInfor");
+            transaction.commit();
         }
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(fragmentManager.getBackStackEntryCount() > 0){
+            fragmentManager.popBackStack();
+        }else
+            super.onBackPressed();
     }
 }
