@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:inputType="text"
+        android:onClick="btnExit"
+        android:text="Exit"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/etId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="enter id"
+            />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="enter name"
+            />
+
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/etUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter unit"
+        />
+    <EditText
+        android:id="@+id/etMadeIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter made in"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="text"
+            android:onClick="btnSelect"
+            android:text="select"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="text"
+            android:onClick="btnSave"
+            android:text="save"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:inputType="text"
+            android:layout_margin="5dp"
+            android:onClick="btnDelete"
+            android:layout_height="wrap_content"
+            android:text="delete"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:inputType="text"
+            android:onClick="btnUpdate"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:text="update"/>
+
+    </LinearLayout>
+    <GridView
+        android:id="@+id/productList"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="6dp"
+        android:verticalSpacing="6dp"
+        android:padding="6dp"
+        android:numColumns="4"/>
+</LinearLayout>
